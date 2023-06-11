@@ -1,0 +1,231 @@
+/*no va dentro de ningun condicional o media querie y es lo que llamamos escritorio primero
+1400 mayor 
+*/
+@import url('https://fonts.googleapis.com/css2?family=Anuphan:wght@100;200;300;400;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Anuphan', sans-serif;
+}
+
+.header{
+    height: 100vh;
+   
+}
+.color-gris{
+   background-color: rgb(53,58,64);
+}
+.ulHeader{
+    background-color:pink;
+}
+.navbar-dark .navbar-nav .colorVerde{
+    color: rgb(9, 130, 47);
+}
+
+.carousel{
+    position:relative;
+}
+
+.conferencia{
+    position: relative;
+    height: 90%;
+}
+.contenedor-texto{
+    width:100%;
+    color:rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.7);
+    inset:0;
+    text-align: right;
+    position: absolute;
+    z-index: 5;
+    font-size: 15px;
+    height: 90vh;
+}
+
+.conferencia-container{
+color:white;
+font-size: 1rem;
+text-align: right;
+width: 40%;
+margin-left: auto;
+height: 100%;
+display: flex;
+flex-direction: column;
+place-content: end;
+margin-right: 8%;
+padding-bottom: 20%;
+align-content: stretch;
+}
+
+.conferencia-container h1{
+   margin-bottom: 1rem;
+}
+.conferencia-container p{
+   margin-bottom: 1rem;
+   line-height: 1.5rem;
+}
+
+.conferencia img{
+    height: 90vh;
+    object-fit: cover;
+}
+
+.boton-container{
+   margin-top: 2rem;
+   display: flex;
+   flex-direction: row;
+   justify-content: flex-end;
+}
+
+.boton-orador {
+    margin-left: 1%;
+    border-radius: 6%;
+    padding: 6px;
+    border: 2px solid rgba(255, 255, 255, 0.452);
+    text-decoration: none;
+    color: white;
+}
+
+.boton-comprar {
+    margin-left: 2%;
+    border-radius: 6%;
+    padding: 6px;
+    border: 2px rgb(39, 167, 70);
+    background-color: rgb(39, 167, 70);
+    text-decoration: none;
+    color: white;
+}
+
+
+
+.section-oradores h2{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.span-titulo {
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.card{
+    border: 1px solid lightgrey;
+    width:  100%;
+    height: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    margin: 1rem 0rem;
+}
+
+.card img{
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
+}
+
+.card-tag {
+    margin-left: 1rem;
+}
+ 
+.lugar-imagen{
+    background-image: url("../img/honolulu.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 60vh;
+}
+.lugar-descripcion{
+    background-color:rgb(54 60 66);
+    color:white;
+    height: 60vh;
+    padding: 1rem 1rem;
+}
+
+.lugar-descripcion h2{
+    margin-bottom: 1rem;
+}
+.lugar-descripcion p{
+    margin-bottom: 1rem;
+    line-height:1.7;
+    font-size: 14px;
+}
+
+.boton-lugar {
+    border-radius: 6%;
+    padding: 6px;
+    border: 2px solid rgba(255, 255, 255, 0.452);
+    text-decoration: none;
+    color: white;
+}
+
+.form-container{
+    width:60%;
+    height: 42vh;
+    margin:2rem auto;
+   
+    text-align: center;
+}
+
+.form-nombre{
+    display: flex;
+}
+
+form p {
+    font-size: 12px;
+    font-weight: 400;
+    text-align: left;
+}
+
+.span-form{
+    text-decoration:none;
+    border-bottom:2px dotted black; 
+    color: black; 
+}
+
+.wsp{
+    position:fixed;
+    bottom:10px;
+    right: 10px;
+    width: 50px;
+    z-index: 15;
+}
+
+.footer{
+    background:linear-gradient( to right, #1d3947,#1d4962, #1e5372) ;
+    height: auto;
+    padding:0.5rem;
+}
+
+.row{
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-footer a{
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+/*vamos a cargar ahora el diseño para celular*/
+/*0 - 600px  */
+@media screen and (max-width: 567px){
+
+
+    .conferencia-container{
+        text-align: right;
+        width: 90%;
+        place-content: center;
+        margin-right: 6%;
+        padding-bottom: 0%;
+    }
+}
+
